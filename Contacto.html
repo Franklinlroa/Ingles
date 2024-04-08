@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formulario.php">
+</head>
+<body>
+
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pinturas.html">Paintings</a></li>
+            <li><a href="Esculturas.html">Sculptures</a></li>
+            <li><a href="Ftografias.html">Photographs</a></li>
+            <li><a href="Eventos.html">Events</a></li>
+            <li><a href="Sobre Nosotros.html">About Us</a></li>
+            <li><a href="Contacto.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="contacto">
+        <h2>Contact Us</h2>
+        <p>Do you have any questions or comments? We're here to help!</p>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Name:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="correo">Email:</label><br>
+            <input type="email" id="correo" name="correo" required><br>
+            <label for="mensaje">Message:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

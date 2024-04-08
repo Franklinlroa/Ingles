@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos CSS personalizados */
+        .artist-profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .artist-item {
+            flex: 1 1 calc(33.33% - 20px);
+            text-align: center;
+        }
+        .artist-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .artist-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .artist-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Artists</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pinturas.html">Paintings</a></li>
+            <li><a href="Esculturas.html">Sculptures</a></li>
+            <li><a href="Ftografias.html">Photographs</a></li>
+            <li><a href="Artistas.html">Artists</a></li>
+            <li><a href="Eventos.html">Events</a></li>
+            <li><a href="Sobre Nosotros.html">About Us</a></li>
+            <li><a href="Contacto.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="artists">
+        <h2>Artists</h2>
+        <div class="artist-profile">
+            <div class="artist-item">
+                <img src="artist1.jpg" alt="Artist 1">
+                <h3>Artist's Name 1</h3>
+                <p>Biography of the artist...</p>
+            </div>
+            <div class="artist-item">
+                <img src="artist2.jpg" alt="Artist 2">
+                <h3>Artist's Name 2</h3>
+                <p>Biography of the artist...</p>
+            </div>
+            <!-- Agrega más elementos de artistas según sea necesario -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

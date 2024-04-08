@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sculptures</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos CSS personalizados */
+        .artwork {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .artwork-item {
+            flex: 1 1 calc(33.33% - 20px);
+        }
+        .artwork-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .artwork-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .artwork-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sculptures</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pinturas.html">Paintings</a></li>
+            <li><a href="Esculturas.html">Sculptures</a></li>
+            <li><a href="Ftografias.html">Photographs</a></li>
+            <li><a href="Eventos.html">Events</a></li>
+            <li><a href="Sobre Nosotros.html">About Us</a></li>
+            <li><a href="Contacto.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="sculptures">
+        <h2>Sculptures</h2>
+        <div class="artwork">
+            <div class="artwork-item">
+                <img src="roma.jpeg" alt="Escultura 1">
+                <center><p>Fontana di Trevi (Roma)</p></center>
+            </div>
+            <div class="artwork-item">
+                <img src="Chicago.jpeg" alt="Escultura 2">
+                <center><p>Cloud Gate de Anish Kapoor (Chicago)</p></center>
+            </div>
+            <div class="artwork-item">
+                <img src="Berlin.jpeg" alt="Escultura 2">
+                <center><p>Altar de Pérgamo (Berlín)</p></center>
+            </div><div class="artwork-item">
+                <img src="florencia.jpeg" alt="Escultura 2">
+                <center><p>David de Miguel Ángel (Florencia)</p></center>
+            </div>
+            <div class="artwork-item">
+                <img src="laocoonte.jpeg" alt="Escultura 2">
+                <center><p>Laocoonte (Roma)</p></center>
+            </div>
+            <div class="artwork-item">
+                <img src="Paris.jpeg" alt="Escultura 2">
+                <center><p>El beso de Rodin (París)</p></center>
+            </div>
+            <!-- Agrega más elementos de esculturas según sea necesario -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

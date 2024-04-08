@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinturas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos CSS personalizados */
+        .artwork {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .artwork-item {
+            flex: 1 1 calc(33.33% - 20px);
+        }
+        .artwork-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .artwork-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .artwork-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Paintings</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pinturas.html">Paintings</a></li>
+            <li><a href="Esculturas.html">Sculptures</a></li>
+            <li><a href="Ftografias.html">Photographs</a></li>
+            <li><a href="Eventos.html">Events</a></li>
+            <li><a href="Sobre Nosotros.html">About Us</a></li>
+            <li><a href="Contacto.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="paintings">
+        <h2>Paintings</h2>
+        <div class="artwork">
+            <div class="artwork-item">
+                <center><img src="LA ULTIMA CENA.jpeg" alt="Pintura 1"></center>
+                <h3>"The Last Supper"</h3>
+            </div>
+            <div class="artwork-item">
+                <center><img src="LA NOCHE ESTRELLADA.jpeg" alt="Pintura 2"></center>
+                <h3>"The Starry Night"</h3>
+            </div>
+            <!-- Agrega más elementos de pinturas según sea necesario -->
+        </div>
+        <div class="artwork">
+            <div class="artwork-item">
+                <center><img src="CRIADA CON CANTARO DE LECHE.jpeg" alt="Pintura 1"></center>
+                <h3>"Milkmaid with a Jug"</h3>
+            </div>
+            <div class="artwork-item">
+                <center><img src="LA MONA LISA.jpeg" alt="Pintura 2"></center>
+                <h3>"The Mona Lisa"</h3>
+            </div>
+            <!-- Agrega más elementos de pinturas según sea necesario -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

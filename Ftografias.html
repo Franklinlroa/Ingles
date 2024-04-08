@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografías</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos CSS personalizados */
+        .artwork {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .artwork-item {
+            flex: 1 1 calc(33.33% - 20px);
+        }
+        .artwork-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .artwork-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .artwork-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Photographs</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pinturas.html">Paintings</a></li>
+            <li><a href="Esculturas.html">Sculptures</a></li>
+            <li><a href="Ftografias.html">Photographs</a></li>
+            <li><a href="Eventos.html">Events</a></li>
+            <li><a href="Sobre Nosotros.html">About Us</a></li>
+            <li><a href="Contacto.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="photographs">
+        <h2>Photographs</h2>
+        <div class="artwork">
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 1.59.27 PM (1).jpeg" alt="Fotografía 1">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 1.59.27 PM (2).jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 1.59.27 PM.jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 1.59.28 PM.jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 2.00.57 PM (1).jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 2.00.57 PM.jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 2.00.58 PM.jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 2.01.04 PM (1).jpeg" alt="Fotografía 2">
+            </div>
+            <div class="artwork-item">
+                <img src="WhatsApp Image 2024-04-07 at 2.01.04 PM.jpeg" alt="Fotografía 2">
+            </div>
+            <!-- Agrega más elementos de fotografías según sea necesario -->
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
