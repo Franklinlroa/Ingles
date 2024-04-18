@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialMediaPro</title>
+    <title>Contacto - SocialMediaPro</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
-         /* Estilos generales */
-         body {
+        /* Estilos generales */
+        body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
@@ -62,13 +62,35 @@
             margin-bottom: 20px;
         }
 
-        .cta {
-            display: inline-block;
-            background-color: #ff7f0e;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #005a8d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004269;
         }
 
         footer {
@@ -94,6 +116,24 @@
                 display: block;
                 margin: 10px 0;
             }
+
+            .contact-form {
+                padding: 10px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                padding: 5px 10px;
+            }
         }
     </style>
 </head>
@@ -103,41 +143,32 @@
             <h1>SocialMediaPro</h1>
             <nav>
                 <ul>
-                  <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="acerca de nosotros.html">Acerca de nosotros</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-        
     </header>
-    <br>
-          <center><h2>Bienvenido a SocialMediaPro</h2>
-          <p>Servicios de marketing digital en redes sociales</p></center>
-          
-        
-    <section class="hero">
+
+    <section id="contacto">
         <div class="container">
-            <h2>Transforma tu presencia en redes sociales con SocialMediaPro</h2>
-            <p>Somos expertos en marketing digital centrado en redes sociales. Desde la gestión de perfiles hasta campañas publicitarias efectivas, te ayudamos a alcanzar tus objetivos comerciales en línea.</p>
-            <a href="https://www.instagram.com/socialmediapro24?igsh=MWtnOWRsbm94bHhqMA==" class="cta-button">Solicitar Consulta Gratuita</a>
+            <h2>Contacto</h2>
+            <div class="contact-form">
+                <form action="" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
     </section>
 
-    <section class="services">
-        <div class="container">
-            <h3>Nuestros Servicios</h3>
-            <div class="service-item">
-                <h4>Gestión de Redes Sociales</h4>
-                <p>Ofrecemos servicios completos de gestión de redes sociales para mantener tu presencia en línea actualizada y relevante.</p>
-            </div>
-            <div class="service-item">
-                <h4>Publicidad en Redes Sociales</h4>
-                <p>Creamos y optimizamos campañas publicitarias en plataformas de redes sociales para aumentar tu visibilidad y generar leads de calidad.</p>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="container">
             <p>&copy; 2024 SocialMediaPro. Todos los derechos reservados.</p>
